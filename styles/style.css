@@ -117,6 +117,20 @@ nav h1 {
     }
 }
 
+/* Partner Section Style */
+.partner-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 30px 100px;
+    padding: 35px 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+    border-image-slice: 1;
+}
+
+
 
 
 /* Media Queries */
@@ -124,6 +138,7 @@ nav h1 {
 @media only screen and (max-width:576px) {
     nav {
         align-items: center;
+        margin: 35px 16px;
     }
 
     .nav-items {
@@ -137,7 +152,91 @@ nav h1 {
     .none {
         display: block;
     }
+
+
+    .hero-section {
+        flex-direction: column-reverse;
+        margin: 20px 40px 50px;
+        display: none;
+    }
+
+    .left-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-container h1 {
+        width: 100%;
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+
+    .left-container p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .btn-round {
+        justify-content: center;
+        margin: auto 50px;
+    }
+
+
+    .partner-section {
+        flex-wrap: wrap;
+        margin: 0 40px 50px;
+        padding: 0;
+        border: none;
+
+    }
+
+    .partner-section img {
+        width: 20%;
+        padding: 5px;
+        margin-bottom: 22px;
+    }
+
 }
 
 /* Tablet Devices */
-@media only screen and (min-width:577px) and (max-width:992px) {}
+@media only screen and (min-width:577px) and (max-width:992px) {
+    nav {
+        align-items: center;
+        margin: 35px 70px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav-icon {
+        margin-right: 0;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .hero-section {
+        margin: 30px 70px 50px;
+    }
+
+
+    .left-container h1 {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+
+    .partner-section img {
+        width: 10%;
+    }
+}
